@@ -56,8 +56,10 @@ bot.command("start", async ctx => {
 });
 
 const menuKeyboard = new InlineKeyboard()
-  .text("Узнать статус заказ", "order-status")
-  .text("Обратиться в поддержку", "support");
+.pay('Оплатить')
+  // .text("Узнать статус заказ", "order-status")
+  // .text("Обратиться в поддержку", "support")
+  ;
 
 const backKeyboard = new InlineKeyboard()
   .text("< Назад в меню", "back");
